@@ -1,0 +1,77 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+#welcome-section {
+  height: 100vh;
+  background: linear-gradient(62deg, #3a3d40 0%, #181719 100%);
+  color: white;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#navbar {
+  position: sticky;
+  top: 0;
+  height: 10vw;
+  max-height: 80px;
+  min-height: 50px;
+  background-color: #be3144;
+  display: flex;
+  flex-direction: row-reverse;
+}
+.navbutton {
+  height: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 15px;
+}
+a {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  font-family: 'Poppins', sans-serif;
+    line-height: 1.4;
+}
+.navbutton:hover {
+  background: #45567d;
+}
+#projects {
+  height: 100vh;
+  background: linear-gradient(#45567d 90%, #3a3d40);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.project-tile {
+  width: 50%;
+  height: 50vw;
+  max-height: 90%;
+  background-color: black;
+  margin: 2em; 
+  text-align: center;
+}
+#footer {
+  height: 7vh;
+  background-color: #3a3d40;
+  color: white;
+  padding-left: 20vw;
+}
+
+
+@media (max-width: 720px) {
+  #projects {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+}
